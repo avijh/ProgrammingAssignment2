@@ -37,10 +37,13 @@ cacheSolve <- function(x, ...) {
         return(outInvMatrix)
     }
   
+    # matrix inverse not cached so create inverse and cache.
     data <- x$get() 
 
+    # create solved matrix
     outInvMatrix <- solve(data) 
 
+    # cache solved matrix
     x$setInvMatrix(outInvMatrix) 
   
   outInvMatrix
