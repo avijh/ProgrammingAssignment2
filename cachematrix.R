@@ -13,7 +13,7 @@ makeCacheMatrix <- function(x = matrix()) {
   
     get <- function() x
   
-    setInvMatrix <- function(invMatrix) outInvMatrix <<- invMatrix
+    setInvMatrix <- function(solve) outInvMatrix <<- solve
   
     getInvMatrix <- function() outInvMatrix
   
